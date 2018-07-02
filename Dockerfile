@@ -12,3 +12,4 @@ RUN apt-get update && \
 
 RUN mkdir -p /usr/local/src && cd /usr/local/src && \
     git clone 'https://github.com/tensorflow/tensorflow' && cd /usr/local/src/tensorflow && git checkout r1.8
+COPY NOTES.txt /tmp/
